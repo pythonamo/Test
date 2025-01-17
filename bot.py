@@ -205,7 +205,7 @@ async def create_supergroup():
 # Define the job and schedule it
 
 
-@aiocron.crontab('0 * * * *',new_york_timezone)
+@aiocron.crontab('*/30 * * * *',new_york_timezone)
 async def scheduled_job():
   if started:
     await create_supergroup()
