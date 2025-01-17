@@ -7,7 +7,8 @@ import asyncio
 import aiocron
 import pytz
 import random
-
+from keep_alive import keep_alive
+keep_alive()
 
 
 new_york_timezone = pytz.timezone('America/New_York')
